@@ -18,6 +18,7 @@ booleen2 = False
 # Permet de verifier de quel type est la valeur d'une variable
 print(f"Cette variable est de type : {type(booleen1)}")
 
+# ---------------------------LISTES ET TABLEAUX---------------------------------------
 # Verifier une liste avec leurs indices :
 liste1 = ["facebook", "twitter", "instagram", "youtube"]
 # les indices de type -3 etc prendses valeurs a l'envers, par exemple -1 est youtube
@@ -58,9 +59,21 @@ print(len(liste3))
 #
 # reverse()
 # Inverse l'ordre des éléments de la liste.
-
+#
+# sort()
+# Trie les elements du tableau par ordre alphabetique
 
 # Creer un Tuple permet d'obtenir le meme systeme que les listes (ou tableau) mais est immuable donc non modifiable.
 # Exemple Tuple :
 monTuple = ("France", "Allemagne", "Angleterre")
 print(monTuple)
+
+# Par contre, je peux concaténer deux Tuples
+
+premierTuple = (1, 2, 3)
+deuxiemeTuple = ("premier", "deuxieme", "troisieme")
+nouveauTuple = premierTuple + deuxiemeTuple
+print(nouveauTuple)
+# Pour trouver si un élément est dans une liste ou un Tuple, renvois true ou false si présent ou non.
+print(2 in premierTuple)
+print(4 in premierTuple)
