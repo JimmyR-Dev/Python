@@ -77,3 +77,76 @@ print(nouveauTuple)
 # Pour trouver si un élément est dans une liste ou un Tuple, renvois true ou false si présent ou non.
 print(2 in premierTuple)
 print(4 in premierTuple)
+
+# ----------------------------Dictionnaire Cle : Valeur--------------------
+
+# Deux manières de faire :
+# Je peux utiliser un systeme de cle : valeur, ici, j'initialise campagne de type dictionnaire
+campagne = {}
+# J'utilise plusieurs clés avec leurs valeurs
+campagne["nom"] = "les chiens sont les meilleurs animaux"
+campagne["maison"] = "Les maisons en bord de mer sont les meilleurs"
+print(campagne["nom"])
+print(campagne["maison"])
+
+# Ou, j'initialise une variable en tant que dictionnaire et je renseigne mes paires cles/valeurs directement
+
+infoCampagne = {
+    "nom": "Coluche",
+    "age": "47",
+    "nom de partie": "Les gigolos",
+    "date de debut": "27/07/2024",
+    "influenceurs": ["@Deccyptique", "@Argon"]
+}
+
+print(infoCampagne["nom"]) # affiche Coluche
+
+# Ajoute une paire cle valeur à la suite de identite
+identite = {
+    "nationalite": "france",
+    "origine": "portugal"
+}
+
+identite["animal"] = "chien"
+print(identite)
+
+# remplace la valeur de nationalite par espagne
+identite["nationalite"] = "espagne"
+print(identite)
+
+# supprime une paire cle valeur
+del identite["origine"]
+print(identite)
+# ou
+identite.pop("nationalite")
+print(identite)
+
+# Si je veux trouver une cle en particulier, je peux proceder comme suit, et cela me renvoie true ou false
+print("animal" in identite)
+
+#LISTE D AUTRES METHODES
+# keys()
+# Retourne une vue sur les clés du dictionnaire.
+# nom_du_dictionnaire.keys()
+#
+# values()
+# Retourne une vue sur les valeurs du dictionnaire.
+#  nom_du_dictionnaire.values()
+#
+# items()
+# Retourne une vue sur les couples (clé, valeur) du dictionnaire.
+#  nom_du_dictionnaire.items()
+#
+# get(clé)
+# Retourne la valeur associée à la clé spécifiée. Si la clé n'est pas présente dans le dictionnaire, retourne la valeur None.
+#  nom_du_dictionnaire.get(clés)
+#
+# pop(clé)
+# Supprime la clé spécifiée et retourne la valeur associée. Si la clé n'est pas présente dans le dictionnaire, retourne la valeur None.
+#  nom_du_dictionnaire.pop(clés)
+#
+# clear()
+# Supprime tous les éléments du dictionnaire.
+#  nom_du_dictionnaire.clear()
+
+
