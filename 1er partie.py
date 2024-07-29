@@ -21,7 +21,7 @@ print(f"Cette variable est de type : {type(booleen1)}")
 # ---------------------------LISTES ET TABLEAUX---------------------------------------
 # Verifier une liste avec leurs indices :
 liste1 = ["facebook", "twitter", "instagram", "youtube"]
-# les indices de type -3 etc prendses valeurs a l'envers, par exemple -1 est youtube
+# les indices de type -3 etc prennent ses valeurs à l'envers, par exemple -1 est youtube
 print(liste1[-3])
 
 # Dans une chaine de caractere, le [2] va renoyer T, je peux faire la meme chose avec les lettres ici.
@@ -50,7 +50,7 @@ print(len(liste3))
 #
 # pop()
 # Supprime et renvoie l'élément à une position donnée de la liste, ou le dernier élément si aucun indice n'est spécifié.
-#
+# Et se base sur l'index, contrairement à remove qui se base sur la valeur
 # index()
 # Renvoie la première occurrence de l'élément spécifié dans la liste.
 #
@@ -124,7 +124,7 @@ print(identite)
 # Si je veux trouver une cle en particulier, je peux proceder comme suit, et cela me renvoie true ou false
 print("animal" in identite)
 
-#LISTE D AUTRES METHODES
+# LISTE D' AUTRES METHODES
 # keys()
 # Retourne une vue sur les clés du dictionnaire.
 # nom_du_dictionnaire.keys()
@@ -148,5 +148,3 @@ print("animal" in identite)
 # clear()
 # Supprime tous les éléments du dictionnaire.
 #  nom_du_dictionnaire.clear()
-
-
